@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <form>
+      <label for="inputPayment">Payment Method</label>
+      <select id="inputPayment" name="Payment-method">
+        <option value="visa-4566">Visa Ending in 4566</option>
+        <option value="American-express">
+          American Express Ending in 9122
+        </option>
+        <option value="Discover">Discover Ending in 9865</option>
+      </select>
+      <br /><br />
+      <fieldset>
+        <legend>Shipping Method</legend>
+        <input
+          type="radio"
+          id="free2day"
+          name="Shipping Method"
+          value="free-2-day"
+        />
+        <label for="free2day">FREE - 2 Day Shipping</label><br />
+        <input
+          type="radio"
+          id="standardshipping"
+          name="Shipping Method"
+          value="standard-shipping"
+        />
+        <label for="standardshipping"
+          >Standard Shipping (4-5 Business Days)</label
+        ><br />
+        <input
+          type="radio"
+          id="rushshipping"
+          name="Shipping Method"
+          value="rush-shipping"
+        />
+        <label for="standardshipping"
+          >FREE - No Rush Shipping (5 Business Days)</label
+        ><br />
+      </fieldset>
+      <br />
+      <label for="gift">This is a gift</label>
+      <input type="checkbox" id="gift" name="gift" checked /><br />
+      <button type="submit">Place Your Order</button>
+    </form>
+  </body>
+</html>
